@@ -19,8 +19,16 @@ class MyThemes {
         // primaryTextTheme: GoogleFonts.latoTextTheme()
       );
   static ThemeData blackTheme(BuildContext context) => ThemeData(
-        scaffoldBackgroundColor: Colors.black,
+        // scaffoldBackgroundColor: Colors.black,
+        backgroundColor: Colors.amber,
         buttonColor: Colors.white,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            // overlayColor: MaterialStateProperty.all(creamColor),
+            backgroundColor: MaterialStateProperty.all(Colors.red),
+            // shadowColor: MaterialStateProperty.all(Colors.red),
+          ),
+        ),
         textTheme: TextTheme(
                 bodyText1: TextStyle(),
                 bodyText2: TextStyle(),
@@ -32,6 +40,6 @@ class MyThemes {
       );
 
   //Colors
-  static Color creamColor = Color(0xfff5f5f5);
+  static Color creamColor = Color.fromARGB(165, 165, 165, 165);
   static Color darkBluishColor = Color(0xff403b58);
 }
