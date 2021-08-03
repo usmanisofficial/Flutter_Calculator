@@ -19,16 +19,7 @@ class MyThemes {
         // primaryTextTheme: GoogleFonts.latoTextTheme()
       );
   static ThemeData blackTheme(BuildContext context) => ThemeData(
-        // scaffoldBackgroundColor: Colors.black,
-        backgroundColor: Colors.amber,
-        buttonColor: Colors.white,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ButtonStyle(
-            // overlayColor: MaterialStateProperty.all(creamColor),
-            backgroundColor: MaterialStateProperty.all(Colors.red),
-            // shadowColor: MaterialStateProperty.all(Colors.red),
-          ),
-        ),
+        scaffoldBackgroundColor: Colors.black,
         textTheme: TextTheme(
                 bodyText1: TextStyle(),
                 bodyText2: TextStyle(),
